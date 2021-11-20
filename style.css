@@ -1,0 +1,160 @@
+#menu {
+	background: #29CC75;
+	color: #FFF;
+	height: 50px;
+	padding-left: 18px;
+	border-radius: 16px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 50px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BF";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #CBCCC8;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #FAFAF5;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #7D7D8D;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #F2F2F2;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+#encabezado{
+    width: 900px;
+    height: 100px;
+    background: #4DB6AC;	
+    margin:auto;
+    background-image: url(imagen.jpg);
+    background-size: 20.4%;
+
+    }
+#menu{
+    width: 870px;
+    height: 50px;
+    background: #4DB6AC;	
+    margin:auto;
+    }
+#cuerpo{
+    width: 890px;
+    height: 700px;
+    background: #FDEDEC;	
+    margin:auto;
+
+    }
+
+
+ #formulario{
+    width: 830px;
+    height: 630px;
+    background: #FCF3CF;	
+    float:left;
+    margin: 30px;
+    }
+
+#pie
+{
+    width: 900px;
+    height: 90px;
+    background: #4DB6AC;	
+    margin: auto;
+    }
+.btn {
+  background: #34d98c;
+  background-image: -webkit-linear-gradient(top, #34d98c, #2bb8a3);
+  background-image: -moz-linear-gradient(top, #34d98c, #2bb8a3);
+  background-image: -ms-linear-gradient(top, #34d98c, #2bb8a3);
+  background-image: -o-linear-gradient(top, #34d98c, #2bb8a3);
+  background-image: linear-gradient(to bottom, #34d98c, #2bb8a3);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #fcfcfc;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
